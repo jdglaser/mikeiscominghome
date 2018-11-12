@@ -1,7 +1,3 @@
-$(document).ready(function () {
-    $('#countdown').css('visibility','visible').hide().fadeIn(3000);
-});
-
 // Set the date we're counting down to
 var countDownDate = new Date("Jan 10, 2019 00:00:00").getTime();
 
@@ -30,3 +26,7 @@ var x = setInterval(function() {
     document.getElementById("countdown").innerHTML = "HE'S HOME!!!";
   }
 }, 1000);
+
+$(document).ready(function () {
+  $('#countdown').css('visibility','visible').hide().fadeIn(3000);
+});
