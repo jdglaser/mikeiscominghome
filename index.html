@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Bootstrap Social CSS -->
-    <link rel="stylesheet" href="css/bootstrap-social.css"></script>
+    <link rel="stylesheet" href="css/bootstrap-social.css">
     <title>#mikehomecoming2019</title>
 
     <!-- Custom Style Sheet-->
@@ -24,13 +24,16 @@
     <meta property="og:title"         content="Mike is Coming Home!" />
     <meta property="og:description"   content="Find out how much longer we have to wait before Mike comes back home! #mikehomecoming2019" />
     <meta property="og:image"         content="http://www.mikeiscominghome.com/content/tinman.png" />
+
+    <!--Custom Scripts-->
+    <script src="script.js"></script>
   </head>
   <body>
     
     <div class="col-xs-1 text-center">
       <h2 style="color: dimgray"><b>Mike is coming home in:</b></h2>
       <!-- Display the countdown timer in an element -->
-      <h1><p id="countdown" style="visibility: hidden">placeholder</p></h1>
+      <h1><p id="countdown" style="height: 35px"></p></h1>
       <h2 style="color: dimgray"><b>#mikehomecoming2019</b></h2>
 
       <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/intent/tweet?text=Mike%20world" onclick="javascript:window.open('https://twitter.com/share?text=Mike is coming home! See the countdown now!&url=http://mikeiscominghome.com/&hashtags=mikehomecoming2019','Twitter-dialog','width=626,height=436'); return false;">
@@ -40,6 +43,11 @@
       <a class="btn btn-social-icon btn-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('http://www.mikeiscominghome.com/'),'facebook-share-dialog','width=626,height=436'); return false;">
         <span class="fa fa-facebook"></span>
       </a>
+      <br>
+      <video width="500" height="360" id="cominhome" controls>
+          <source src="content/cominghome.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
 
     <!-- Optional JavaScript -->
@@ -48,7 +56,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-    <!--Custom Scripts-->
-    <script src="scripts.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $('#body').show();
+      });
+    </script>
   </body>
 </html>
